@@ -1,0 +1,19 @@
+#stage3 {
+	position: absolute;
+	left: 103%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: left 10.15s linear;
+}
+
+#stage3.on {
+	left: 0;
+	background-color: rgba(0,0,0,1);
+}
+
+#stage3 img {
+	position: absolute;
+	opacity: 0;
+}

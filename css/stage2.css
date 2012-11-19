@@ -1,0 +1,162 @@
+#stage2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: all 5s linear;
+}
+
+#stage2.on {
+	background-color: rgba(0,0,0,1);
+}
+
+#stage2Container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 0;
+	width: 100%;
+	-webkit-transform: translate3d(200px,0,-200px) rotateY(110deg);
+	-webkit-transition: all 5s ease-in-out, left 32s linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+#stage2OtherLetters {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: all 3s linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+.stage2Letter {
+	position: absolute;
+	left: -0.5em;
+	top: -0.5em;
+	width: 1em;
+	height: 1em;
+	font-size: 100%;
+	text-align: center;
+	-webkit-transition: opacity 5s linear, all 120s linear;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50%;
+}
+
+#stage2StartLetter {
+	left: 10%;
+	top: 50%;
+	margin: -0.5em 0 0 -0.5em;
+	opacity: 0;
+	-webkit-transform: translate3d(0,0,-365px) rotateX(0deg) rotateY(-470deg) rotateZ(0deg);
+}
+
+.stage2Letter .inner,
+#stage2StartLetter.separated .inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1em;
+	height: 1em;
+	color: rgba(255,0,0,0.75);
+	text-align: center;
+	-webkit-transform: translate3d(0,0,20px);
+	-webkit-transition: all 1s ease-out;
+}
+
+.stage2Letter .inner2,
+#stage2StartLetter.separated .inner2 {
+	color: rgba(0,255,0,0.75);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.stage2Letter .inner3,
+#stage2StartLetter.separated .inner3 {
+	color: rgba(0,128,255,0.75);
+	-webkit-transform: translate3d(0,0,-20px);
+}
+
+#stage2StartLetter .inner {
+	color: rgba(255,255,255,1);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+#stage2Bar {
+	position: absolute;
+	left: 103%;
+	top: 50%;
+	width: 3%;
+	height: 40%;
+	margin: -20% 0 0 -3%;
+	background-color: #ffffff;
+	-webkit-transition: left 30s linear;
+}
+
+#stage2Bar.phase2 {
+	left: -200%;
+}
+
+#stage2Names {
+	position: absolute;
+	left: 103%;
+	width: 50em;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	font-size: 60%;
+	background-color: #000000;
+	-webkit-transition: left 30s linear;
+}
+
+#stage2Names.phase2 {
+	left: -200%;
+}
+
+#stage2Names p {
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	margin: -0.5em 0 0 0;
+	white-space: nowrap;
+	-webkit-transition: all 17s linear;
+}
+
+#stage2Names.phase3 p {
+	right: 0%;
+}
+
+#stage2Bar2 {
+	position: absolute;
+	left: 103%;
+	top: 50%;
+	width: 3%;
+	height: 40%;
+	margin: -20% 0 0 -3%;
+	background-color: #ffffff;
+	-webkit-transition: left 30s linear;
+}
+
+#stage2Bar2.phase2 {
+	left: -200%;
+}
+
+#stage2Shapes {
+	position: absolute;
+	left: 103%;
+	width: 50em;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+	font-size: 60%;
+	background-color: #000000;
+	-webkit-transition: left 30s linear;
+}
+
+#stage2Shapes.phase2 {
+	left: -200%;
+}

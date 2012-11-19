@@ -1,0 +1,105 @@
+/* GENERAL ========================================= */
+
+/* Zero default margin & padding around common elements */
+article, blockquote, body, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, header, li, menu, nav, ol, p, section, ul {
+	margin: 0;
+	border: 0 none #FFFFFF;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 1;
+	font-family: 'Bariol', 'Dosis', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-perspective: 700;
+	-webkit-transform-style: preserve-3d;
+}
+
+a {
+	color: #0099cc;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #9966cc;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	border: 0 none transparent;
+}
+
+input, select, table, textarea {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* CONTENT ========================================= */
+
+.loading {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	margin: -0.7em 0 0 0;
+	font-size: 24px;
+}
+
+.loading.on {
+	display: block;
+}
+
+.loading span {
+	display: inline-block;
+	width: 0.65em;
+	height: 0.65em;
+	margin: 0 0.6em 0 0;
+	-webkit-border-radius: 0.325em;
+	-moz-border-radius: 0.325em;
+	border-radius: 0.325em;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 0 20px 3px #ff00ff;
+	-webkit-animation: loading 5s infinite;
+}
+
+@-webkit-keyframes loading {
+	0% {
+		background-color: rgba(255,0,0,0.75);
+		-webkit-box-shadow: 0 0 20px 3px rgba(255,0,0,0.75);
+	}
+	25% {
+		background-color: rgba(0,255,0,0.75);
+		-webkit-box-shadow: 0 0 20px 3px rgba(0,255,0,0.75);
+	}
+	50% {
+		background-color: rgba(255,200,0,0.75);
+		-webkit-box-shadow: 0 0 20px 3px rgba(255,200,0,0.75);
+	}
+	75% {
+		background-color: rgba(0,200,255,0.75);
+		-webkit-box-shadow: 0 0 20px 3px rgba(0,200,255,0.75);
+	}
+	100% {
+		background-color: rgba(255,0,0,0.75);
+		-webkit-box-shadow: 0 0 20px 3px rgba(255,0,0,0.75);
+	}
+}

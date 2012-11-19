@@ -1,0 +1,36 @@
+#stage4 {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#stage4.on {
+	visibility: visible;
+}
+
+#stage4Flash {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	-webkit-transition: all 0.5s linear;
+}
+
+#stage4Flash.off {
+	opacity: 0;
+}
+
+#stage4 video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}

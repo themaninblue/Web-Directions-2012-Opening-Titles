@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" manifest="manifest.appcache">
+	<head>
+		<title>Web Directions South 2012 Opening Titles</title>
+		<meta charset="utf-8">
+		
+		<link href='http://fonts.googleapis.com/css?family=Dosis:400' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="css/stage1.css" rel="stylesheet" type="text/css">
+		<link href="css/stage2.css" rel="stylesheet" type="text/css">
+		<link href="css/stage3.css" rel="stylesheet" type="text/css">
+		<link href="css/stage4.css" rel="stylesheet" type="text/css">
+		<link href="css/stage5.css" rel="stylesheet" type="text/css">
+		<link href="css/stage6.css" rel="stylesheet" type="text/css">
+
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/BezierPlugin.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/webaudioapi.js"></script>
+		<script src="js/stage1.js"></script>
+		<script src="js/stage2.js"></script>
+		<script src="js/stage3.js"></script>
+		<script src="js/stage4.js"></script>
+		<script src="js/stage5.js"></script>
+		<script src="js/stage6.js"></script>
+		<script src="js/timeline.js"></script>
+	</head>
+	<body>
+		<div id="loading1" class="loading on"><span></span>Downloading audio &amp; video (7MB) &hellip;</div>
+		<div id="loading2" class="loading"><span></span>Download complete, doing heavy calculation &hellip;</div>
+		<div id="loading3" class="loading">OK, last step: Authorise access to your webcam</div>
+		<audio id="music" src="Bonobo-Recurring.mp3" preload="auto"></audio>
+		<div id="stage1">
+			<div id="stage1Text"><span>This is</span> <span>Web Directions</span> <span>South 2012</span> <span>all live,</span> <span>in a browser</span></div>
+		</div>
+		<div id="stage2">
+			<div id="stage2Container">
+				<span id="stage2StartLetter" class="stage2Letter"><span class="inner">X</span><span class="inner inner2">X</span><span class="inner inner3">X</span></span>
+				<div id="stage2OtherLetters"></div>
+			</div>
+			<div id="stage2Bar"></div>
+			<div id="stage2Names">
+				<p>Jon_Kolko; Ben_Hammersley; Josh_Clark; Tom_Coates;</p>
+			</div>
+			<div id="stage2Bar2"></div>
+		</div>
+		<div id="stage3">
+			<img id="stage3ShapeNames" src="images/shapes_names.png" width="1280" height="760" />
+		</div>
+		<div id="stage4">
+			<div id="stage4Flash"></div>
+			<video id="stage4Video" src="streetview.webm" preload="auto" />
+		</div>
+		<div id="stage5">
+			<div id="stage5Forest">
+				<div id="stage5ForestMask"></div>
+				<div id="stage5Square1" class="stage5Square"></div>
+				<div id="stage5Square2" class="stage5Square"></div>
+				<div id="stage5Square3" class="stage5Square"></div>
+				<div id="stage5Square4" class="stage5Square"></div>
+				<div id="stage5Square5" class="stage5Square"></div>
+				<div id="stage5Square6" class="stage5Square"></div>
+				<div id="stage5Square7" class="stage5Square"><div class="stage5Name stage5Name11">Kate_Kendall</div></div>
+				<div id="stage5Square8" class="stage5Square"><div class="stage5Name stage5Name12">Anson_Parker</div></div>
+				<div id="stage5Square9" class="stage5Square"><div class="stage5Name stage5Name13">Mick_Liubinskas</div></div>
+				<div id="stage5Square10" class="stage5Square"><div class="stage5Name stage5Name11">Kate_Kendall</div></div>
+				<div id="stage5Square11" class="stage5Square"><div class="stage5Name stage5Name12">Anson_Parker</div></div>
+				<div id="stage5Square12" class="stage5Square"><div class="stage5Name stage5Name13">Mick_Liubinskas</div></div>
+				<div id="stage5Square13" class="stage5Square"><div class="stage5Name stage5Name11">Kate_Kendall</div></div>
+				<div id="stage5Square14" class="stage5Square"><div class="stage5Name stage5Name12">Anson_Parker</div></div>
+				<div id="stage5Square15" class="stage5Square"><div class="stage5Name stage5Name13">Mick_Liubinskas</div></div>
+				<div id="stage5Square16" class="stage5Square"></div>
+				<div id="stage5Square17" class="stage5Square"></div>
+				<div id="stage5Square18" class="stage5Square"></div>
+				<div id="stage5Square19" class="stage5Square"></div>
+				<div id="stage5Square20" class="stage5Square"></div>
+				<div id="stage5Square21" class="stage5Square"></div>
+				<div id="stage5Square22" class="stage5Square"><div class="stage5Name stage5Name14">Alan_Duncan</div></div>
+				<div id="stage5Square23" class="stage5Square"><div class="stage5Name stage5Name15">Shane_Weddell</div></div>
+				<div id="stage5Square24" class="stage5Square"><div class="stage5Name stage5Name16">Kim_Heras</div></div>
+				<div id="stage5Square25" class="stage5Square"><div class="stage5Name stage5Name14">Alan_Duncan</div></div>
+				<div id="stage5Square26" class="stage5Square"><div class="stage5Name stage5Name15">Shane_Weddell</div></div>
+				<div id="stage5Square27" class="stage5Square"><div class="stage5Name stage5Name16">Kim_Heras</div></div>
+				<div id="stage5Square28" class="stage5Square"><div class="stage5Name stage5Name14">Alan_Duncan</div></div>
+				<div id="stage5Square29" class="stage5Square"><div class="stage5Name stage5Name15">Shane_Weddell</div></div>
+				<div id="stage5Square30" class="stage5Square"><div class="stage5Name stage5Name16">Kim_Heras</div></div>
+				<div id="stage5Square31" class="stage5Square"><div class="stage5Name stage5Name17">Peter_Bradd</div></div>
+				<div id="stage5Square32" class="stage5Square"><div class="stage5Name stage5Name18">Ben_Duncan</div></div>
+				<div id="stage5Square33" class="stage5Square"><div class="stage5Name stage5Name19">Alan_Downie</div></div>
+				<div id="stage5Square34" class="stage5Square"><div class="stage5Name stage5Name17">Peter_Bradd</div></div>
+				<div id="stage5Square35" class="stage5Square"><div class="stage5Name stage5Name18">Ben_Duncan</div></div>
+				<div id="stage5Square36" class="stage5Square"><div class="stage5Name stage5Name19">Alan_Downie</div></div>
+				<div id="stage5Square37" class="stage5Square"><div class="stage5Name stage5Name17">Peter_Bradd</div></div>
+				<div id="stage5Square38" class="stage5Square"><div class="stage5Name stage5Name18">Ben_Duncan</div></div>
+				<div id="stage5Square39" class="stage5Square"><div class="stage5Name stage5Name19">Alan_Downie</div></div>
+				<div id="stage5Name1" class="stage5Name"><span>Arunan_Skanthan</span></div>
+				<div id="stage5Name2" class="stage5Name"><span>Damon_Oehlman</span></div>
+				<div id="stage5Name3" class="stage5Name"><span>Mark_Dalgleish</span></div>
+				<div id="stage5Name4" class="stage5Name"><span>Myles_Eftos</span></div>
+				<div id="stage5Name5" class="stage5Name"><span>Sebastiano_Armeli-Battana</span></div>
+				<div id="stage5Name6" class="stage5Name"><span>Jared_Wyles</span></div>
+				<div id="stage5Name7" class="stage5Name"><span>Troy_Hunt</span></div>
+				<div id="stage5Name8" class="stage5Name"><span>Chris_Lienert</span></div>
+				<div id="stage5Name9" class="stage5Name"><span>Stoyan_Stefanov</span></div>
+				<div id="stage5Name10" class="stage5Name"><span>Lea_Verou</span></div>
+				<div id="stage5Name11" class="stage5Name"><span>Douglas_Crockford</span></div>
+			</div>
+		</div>
+		<div id="stage6">
+			<div id="stage6Names1" class="stage6Names">
+				Douglas_Crockford<br />
+				Marcus_Schappi<br />
+				Matt_Milosavljevic
+			</div>
+			<div id="stage6Names2" class="stage6Names">
+				Leni_Mayo<br />
+				Cameron_Craig<br />
+				Dmitry_Baranovskiy
+			</div>
+			<div id="stage6Names3" class="stage6Names">
+				Mike_Cannon-Brookes<br />
+				Rebekah_Campbell<br />
+				Avis_Mulhall
+			</div>
+			<div id="stage6Names4" class="stage6Names">
+				Russell_Ivanovic<br />
+				Paul_Gray
+			</div>
+			<div id="stage6Names5" class="stage6Names">
+				<span>Produced by</span>
+				Maxine Sherrin &amp;<br />
+				John Allsopp
+			</div>
+			<div id="stage6Names6" class="stage6Names">
+				<span>Titles by</span>
+				Cameron Adams
+			</div>
+		</div>
+	</body>
+</html>
